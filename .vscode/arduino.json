@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:uno",
+    "sketch": "PS2X_lib\\examples\\PS2X_Example\\PS2X_Example.ino",
+    "port": "COM9"
+}

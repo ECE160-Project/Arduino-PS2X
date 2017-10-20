@@ -6,10 +6,10 @@
  *   - 2e colmun: Stef?
  * replace pin numbers by the ones you use
  ******************************************************************/
-#define PS2_DAT        13  //14    
-#define PS2_CMD        11  //15
-#define PS2_SEL        10  //16
-#define PS2_CLK        12  //17
+#define PS2_DAT        6  //14    
+#define PS2_CMD        3  //15
+#define PS2_SEL        4  //16
+#define PS2_CLK        5  //17
 
 /******************************************************************
  * select modes of PS2 controller:
@@ -41,7 +41,7 @@ void setup(){
   //CHANGES for v1.6 HERE!!! **************PAY ATTENTION*************
   
   //setup pins and settings: GamePad(clock, command, attention, data, Pressures?, Rumble?) check for error
-  error = ps2x.config_gamepad(PS2_CLK, PS2_CMD, PS2_SEL, PS2_DAT, pressures, rumble);
+  error = ps2x.config_gamepad(5, 7, 4, 6, 0, 0);
   
   if(error == 0){
     Serial.print("Found Controller, configured successful ");

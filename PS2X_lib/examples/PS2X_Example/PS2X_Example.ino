@@ -34,7 +34,7 @@ byte vibrate = 0;
 
 void setup(){
  
-  Serial.begin(57600);
+  Serial.begin(115200);
   
   delay(300);  //added delay to give wireless ps2 module some time to startup, before configuring it
    
